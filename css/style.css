@@ -1,0 +1,278 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+/*Foundation custom column size*/
+.large-fiveacross {
+    width: 20%;
+}
+@media only screen and (max-width: 60.063em) { 
+    .large-fiveacross {
+	width: 50%;
+    }
+} 
+@media only screen and (max-width: 40.063em) { 
+    .large-fiveacross {
+	width: 100%;
+    }
+} 
+
+/* General */
+.transition-slow {
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+.transition-fast {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+section {
+    min-height: 100%;
+}
+
+/* Social Buttons */
+#social {
+    position: fixed;
+    top: 1px;
+    right: -100px;
+    z-index: 20;
+    transition-delay: 1s;
+}
+#social a img, #social a {
+    outline: none;
+}
+.social-icon {
+    width: 60px;
+    height: auto;
+    display: block;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+.social-icon:hover {
+    opacity: 1 !important;
+    border: 1px solid orange;
+}
+
+/* options section */
+
+#options {
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 5em;
+}
+.choices {
+    opacity: 0;
+}
+.choices-slide {
+    padding-top: 10em;
+    opacity: 1;
+}
+.icon-option {
+    border: 1px solid #333333;
+    border-radius: 50%; 
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    background-size: 80% 80%;
+    background-position: 0 300px;
+    background-repeat: no-repeat;
+}
+.icon-slideIn{
+    background-position: center center;
+}
+
+.icon-2 .icon-slideIn{
+    transition-delay: .3s;
+}
+.icon-3 .icon-slideIn{
+    transition-delay: .6s;
+}
+.icon-skills {
+    background-image: url('https://cdn2.iconfinder.com/data/icons/picol-vector/32/source_code-512.png');
+}
+.icon-experience {
+    background-image: url('http://assets.strikingly.com/assets/themes/onyx_new/work-icon.png');
+}
+.icon-about {
+    background-image: url('http://www.iconsdb.com/icons/preview/dark-gray/about-xxl.png');
+}
+#options h3 {
+    color: #333;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#options p {
+    color: #333;
+    font-size: 16px;
+    text-align: justify;
+    max-width: 250px;
+    margin: auto;
+    margin-top: 30px;
+    font-weight: 300;
+}
+.choices > a > .columns {
+    border: 1px solid transparent;
+    padding: 20px;
+}
+.choices > a > .columns:hover {
+    border: 1px solid #888888;
+}
+
+/*Title*/
+.title {
+    width: 100%;
+    height: 600px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    position: relative;
+    opacity: .5;
+    -moz-box-shadow:    inset 0 0 300px #000000;
+    -webkit-box-shadow: inset 0 0 300px #000000;
+    box-shadow:         inset 0 0 300px #000000;
+}
+
+.title h2 {
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    line-height: 2;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0;
+}
+#skills .title {
+    /*background: url('http://farm3.staticflickr.com/2326/2378867408_5d2ac25d2f_o.jpg') no-repeat 0 0;*/
+    background: url('https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&w=1080&h=1080&fit=max&fm=jpg&s=b24c3a8c3404a869339793aa8b2f6d45') no-repeat;
+    background-size: 100% auto;
+}
+#experience .title {
+    /*background: url('http://www.acg.org/UserFiles/image/detroit/Skyline%20Detroit2.jpg');*/
+    background: url('https://unsplash.imgix.net/reserve/yapfjxRqy2d2rGRNc2yQ_zavrsnica-9-indie.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&s=4a04535c1e7e8ae39b81e9a6e6f04c19') no-repeat;
+    background-size: 100% auto;
+}
+#about .title {
+    /*background: url('http://www.acg.org/UserFiles/image/detroit/Skyline%20Detroit2.jpg');*/
+    background: url('https://ununsplash.imgix.net/reserve/e66NHyUFQx6lNahLbW6g_IMG_2536_2.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&s=27757d2e31d82140da0ed9da9bd98df4') no-repeat;
+    background-size: 100% auto;
+}
+
+/*----Skills Section---*/
+
+#skills {
+    width: 100%;
+    margin: 0 auto;
+}
+#skills .row {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+#skills p {
+    color: #333;
+    font-weight: 100;
+
+}
+#skills p {
+    font-size: 1.4em;
+}
+#skills br {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*---Experience Section---*/
+#experience {
+    min-height: 100%;
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.description {
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
+    background: white;
+}
+.description p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.expBoxWrap {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background: #ddd;
+    opacity: 0;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+.expBoxWrap .row {
+    margin: auto;
+    max-width: 1600px;
+}
+.expBoxWrap .row .columns {
+    margin-top: 30px;
+}
+.expBox {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    background-position: center center;
+}
+
+.expBox h2 {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-weight: 100;
+    background: rgba(0,0,0,.8);
+    font-size: 1.3em;
+    
+}
+/*--exp Clients--*/
+.onstar {
+    background: url('http://image.automobilemag.com/f/57617670+q100+re0/onstar-logo.jpg') no-repeat #fff;
+    background-size: 100% auto;
+    background-position: center center;
+}
+
+
+
+/*About Section*/
+#about {
+    min-height: 100%;
+    margin: 0;
+}
