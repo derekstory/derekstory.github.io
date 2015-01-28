@@ -42,7 +42,7 @@ section {
 /* Social Buttons */
 #social {
     position: fixed;
-    top: 1px;
+    top: 10px;
     right: -100px;
     z-index: 20;
     transition-delay: 1s;
@@ -249,6 +249,9 @@ section {
     border-radius: 10px;
     border: 1px solid #cccccc;
     background-position: center center;
+    -moz-box-shadow:    inset 0 0 20px #000000;
+    -webkit-box-shadow: inset 0 0 20px #000000;
+    box-shadow:         inset 0 0 20px #000000;
 }
 
 .expBox h2 {
@@ -268,9 +271,51 @@ section {
     background-size: 100% auto;
     background-position: center center;
 }
-
-
-
+.usaa {
+    background: url('http://img.photobucket.com/albums/v436/passion4architecture/LOGO_ANIMALS/Logo_USAA_dian-hasan-branding_US-5_zps46340ed5.png') no-repeat #002E4E;
+    background-size: 50% auto;
+    background-position: center center;
+}
+.navy {
+    background: url('http://www.public.navy.mil/fltfor/cnmoc/PublishingImages/logos/AmNavy_Tag_WHITE.jpg') no-repeat #173053;
+    background-size: 70% auto;
+    background-position: center center;
+}
+.edwardjones {
+    background: url('https://howdy-on.s3.amazonaws.com/company_logos/edward_jones.jpg') no-repeat #FFC14A;
+    background-size: 120% auto;
+    background-position: center center;
+}
+.easternmarket {
+    background: url('http://detroitfoodacademy.com/wp-content/uploads/2013/10/Token_Image.jpg') no-repeat #FFFFFF;
+    background-size: 60% auto;
+    background-position: center center;
+}
+.consumersenergy {
+    background: url('http://www.greenelectricalsupply.com/images/consumers_energy_logo.jpg') no-repeat #FFFFFF;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.dow {
+    background: url('http://www.twinwillowsconstruction.com/wp-content/uploads/Powerhouse-logo.jpg') no-repeat #FFFFFF;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.districtdetroit {
+    background: url('http://www.descmiworks.com/wp-content/uploads/2014/09/District-Logo-Left-Inverted1.jpg') no-repeat #000000;
+    background-size: 90% auto;
+    background-position: center center;
+}
+.kaiser {
+    background: url('https://ehrintelligence.com/wp-content/uploads/kaiser-logo.jpg') no-repeat #ffffff;
+    background-size: 90% auto;
+    background-position: center center;
+}
+.haven {
+    background: url('https://www.haven-oakland.org/assets/img/brand/haven-logo.png') no-repeat #ffffff;
+    background-size: 50% auto;
+    background-position: center center;
+}
 /*About Section*/
 #about {
     min-height: 100%;
