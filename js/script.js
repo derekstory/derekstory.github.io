@@ -1,16 +1,11 @@
 $(document).on('ready',function () {
-
-    //Slide in icons
-    $(".choices").delay(300).queue(function () {
-        $(this).addClass("choices-slide").dequeue();
+   
+    $("#home").delay(500).queue(function () {
+	$(this).removeClass("home-initial").addClass("home-explode").dequeue();
     });
-    $(".icon-option").delay(300).queue(function () {
-        $(this).addClass("icon-slideIn").dequeue();
+    $("#home").delay(1000).queue(function () {
+	$(this).addClass("home-after").removeClass("explode").dequeue();
     });
-    $("#social").delay(300).queue(function () {
-        $(this).css('right','30px').dequeue();
-    });
-
 
     //Smooth scroll to anchor
     $(function() {
@@ -41,19 +36,37 @@ $(document).on('ready',function () {
     //Show full opacity of social icons at top of window
     $(function(){
 	$(window).scroll(function() { 
-            if ($(this).scrollTop() > 0) { 
+	    if ($(this).scrollTop() > 0) { 
+		$('aside').css('left','25px');
 		$(".social-icon").css('opacity', '.4');
             } 
             else {     
+		$('aside').css('left','-200px');
 		$(".social-icon").css('opacity','1');
-            }  
+            } 
 	});
     });
 
 
 
     $(window).scroll(function() {
+	var windscroll = $(window).scrollTop();
+        if ($('#options').position().top <= windscroll - -400)   {
+		$(".choices").addClass("choices-slide");
+		$(".icon-option").addClass("icon-slideIn");
+	} else {
+	    $(".choices").removeClass("choices-slide");
+	    $(".icon-option").removeClass("icon-slideIn");
+	}
+
+    }).scroll();
+
+
+
+
+    $(window).scroll(function() {
 	var windscroll = $(this).scrollTop();
+
 
 	//Fade in full opacity when you reach the section images
 	var masthead = $('.title');

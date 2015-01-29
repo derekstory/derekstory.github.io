@@ -28,26 +28,21 @@ body, html {
     transition: all .8s ease;
 }
 .transition-fast {
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-}
-
-section {
-    min-height: 100%;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .4s ease;
 }
 
 /* Social Buttons */
-#social {
+aside {
     position: fixed;
-    top: 10px;
-    right: -100px;
-    z-index: 20;
-    transition-delay: 1s;
+    top: 15px;
+    left: -100px;
+    z-index: 10;
 }
-#social a img, #social a {
+aside a img, #social a {
     outline: none;
 }
 .social-icon {
@@ -65,19 +60,105 @@ section {
     border: 1px solid orange;
 }
 
+#logo {
+    font-weight: 100;
+    padding: 10px;
+    z-index: 20;
+    -webkit-text-stroke: 1px white;
+    font-size: 1.2em;
+    margin-left: -15px;
+}
+#logo h2 {
+    font-size: 3.2em;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    color: #333;
+}
+#logo h3 {
+    font-size: .75em;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+#logo h2, #logo h3 {
+    text-shadow:
+    -1px -1px 0 #ffffff;
+    1px -1px 0 #ffffff;
+    -1px 1px 0 #ffffff;
+    1px 1px 0 #ffffff;
+}
+/*Home Section*/
+#home {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-initial {
+    background: #111;
+}
+.home-after {
+    background: #333;
+}
+.explode {
+    background: transparent;
+}
+#initial-wrap {
+    height: 450px;
+    position: relative;
+    width: 200px;
+}
+#initial-d {
+    left: -140px;
+}
+#initial-s {
+    right: -140px;
+}
+#home h2, #home h3 {
+    margin: 0;
+    padding: 0;
+}
+#home h2 {
+    color: #ffffff;
+    font-size: 20em;
+    font-weight: 100;
+    font-family: 'Gruppo', cursive;
+    line-height: 1;
+    position: absolute;
+
+}
+#home h3 {
+    font-size: 4.3em;
+    line-height: 1;
+    font-weight: 100;
+    position: relative;
+    top: 280px;
+    color: #fff;
+    left: -120px;
+}
+
 /* options section */
 
 #options {
     width: 100%;
-    min-height: 100%;
-    padding-bottom: 5em;
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 .choices {
     opacity: 0;
+    z-index: 10;
+    left: 12%;
+    margin-top: 5em;
 }
 .choices-slide {
-    padding-top: 10em;
     opacity: 1;
+    margin-top: 0em;
 }
 .icon-option {
     border: 1px solid #333333;
@@ -224,7 +305,7 @@ section {
 .expBoxWrap {
     padding-top: 3em;
     padding-bottom: 3em;
-    background: #ddd;
+    background: url('../img/project_papper.png') repeat #ddd;
     opacity: 0;
     -webkit-transition: all .8s ease;
     -moz-transition: all .8s ease;
