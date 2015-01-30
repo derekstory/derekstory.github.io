@@ -28,22 +28,32 @@ $(document).on('ready',function () {
 	});
     });
 
-    //Subtle background image position change on scroll
-    $(window).bind("load resize scroll",function(e) {
-	var y = $(window).scrollTop();
 
-	$(".title").filter(function() {
-            return $(this).offset().top < (y + $(window).height()) &&
-		$(this).offset().top + $(this).height() > y;
-	}).css('background-position', '0px ' + parseInt(-y / 3) + 'px');
-    });
-    
-    //Show full opacity of social icons at top of window
+  
+
+    //Subtle background image position change on scroll for large screens
+    $(window).on("load resize scroll",function(e) {
+	if ( $(window).width() > 940) {      
+
+	    var y = $(window).scrollTop();
+
+	    $(".title").filter(function() {
+		return $(this).offset().top < (y + $(window).height()) &&
+		    $(this).offset().top + $(this).height() > y;
+	    }).css('background-position', '0px ' + parseInt(-y / 5) + 'px');
+	}
+	else {
+
+	}
+    });    
+
+
+    //Slidein social icons and logo
     $(function(){
 	$(window).scroll(function() { 
 	    if ($(this).scrollTop() > 0) { 
 		$('aside').css('left','25px');
-		$(".social-icon").css('opacity', '1');
+		$(".social-icon").css('opacity', '.4');
             } 
             else {     
 		$('aside').css('left','-200px');
@@ -104,12 +114,12 @@ $(document).on('ready',function () {
     });
 
 
-
     //Smooth mousewheel scrolling
     $("html").niceScroll({
 	mousescrollstep: "10",
 	scrollspeed: "100",
     });
+
 
 });
 

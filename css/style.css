@@ -13,7 +13,7 @@ body, html {
 	width: 50%;
     }
 } 
-@media only screen and (max-width: 40.063em) { 
+@media only screen and (max-width: 35.063em) { 
     .large-fiveacross {
 	width: 100%;
     }
@@ -42,7 +42,12 @@ aside {
     left: -100px;
     z-index: 10;
 }
-aside a img, #social a {
+@media only screen and (max-width: 40em) {
+    aside {
+	display: none;
+    }
+}
+aside a img, #social a, #arrow-anchor, #arrow-ancor {
     outline: none;
 }
 .social-icon {
@@ -295,7 +300,29 @@ aside a img, #social a {
     -webkit-box-shadow: inset 0 0 300px #000000;
     box-shadow:         inset 0 0 300px #000000;
 }
-
+.cover {
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-attachment: scroll !important;
+}
+@media only screen and (max-width: 70em) {
+    .title {
+	background-position: 0 0 !important;
+	height: 500px;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+	background-attachment: scroll !important;
+    }
+}
+@media only screen and (max-width: 40em) {
+    .title {
+	height: 250px;
+    }
+}
 .title h2 {
     background: rgba(0,0,0,.7);
     width: 100%;
@@ -306,6 +333,11 @@ aside a img, #social a {
     font-weight: 100;
     position: absolute;
     bottom: 0;
+}
+@media only screen and (max-width: 40em) {
+    .title h2 {
+	font-size: 30px;
+    }
 }
 #skills .title {
     background: url('../img/desk.jpg') no-repeat;
@@ -331,18 +363,26 @@ aside a img, #social a {
 #skills .row {
     padding-top: 4em;
     padding-bottom: 4em;
+    max-width: 1800px;
 }
 #skills p {
     color: #333;
     font-weight: 100;
-
-}
-#skills p {
     font-size: 1.4em;
+    text-align: center;
 }
 #skills br {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+@media only screen and (max-width: 30em) {
+    #skills p {
+	font-size: 1em;
+    }
+    #skills br {
+	margin-top: 8px;
+	margin-bottom: 8px;
+    }
 }
 
 /*---Experience Section---*/
