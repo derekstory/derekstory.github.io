@@ -1,12 +1,12 @@
 $(document).on('ready',function () {
    
-    $("#home").delay(1800).queue(function () {
+    $("#home").delay(1100).queue(function () {
 	$(this).removeClass("home-initial").addClass("home-after").dequeue();
     });
-    $("#home h2").delay(1800).queue(function () {
+    $("#home h2").delay(1100).queue(function () {
 	$(this).css('color', 'white');
     });
-    $("#home h3").delay(1800).queue(function () {
+    $("#home h3").delay(1100).queue(function () {
 	$(this).css('color', '#888888');
     });
 
