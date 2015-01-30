@@ -46,7 +46,7 @@ aside a img, #social a {
     outline: none;
 }
 .social-icon {
-    width: 60px;
+    width: 65px;
     height: auto;
     display: block;
     -webkit-transition: all .8s ease;
@@ -54,10 +54,13 @@ aside a img, #social a {
     -ms-transition: all .8s ease;
     -o-transition: all .8s ease;
     transition: all .8s ease;
+    margin-left: 3px;
+    padding: 5px;
 }
 .social-icon:hover {
     opacity: 1 !important;
     border: 1px solid orange;
+    border-radius: 10px;
 }
 
 #logo {
@@ -65,8 +68,10 @@ aside a img, #social a {
     padding: 10px;
     z-index: 20;
     -webkit-text-stroke: 1px white;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-left: -15px;
+    font-family: 'Gruppo', cursive;
+    margin-bottom: 10px;
 }
 #logo h2 {
     font-size: 3.2em;
@@ -77,7 +82,7 @@ aside a img, #social a {
     color: #333;
 }
 #logo h3 {
-    font-size: .75em;
+    font-size: .650em;
     font-weight: 100;
     padding: 0;
     margin: 0;

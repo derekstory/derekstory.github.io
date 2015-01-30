@@ -43,15 +43,14 @@ $(document).on('ready',function () {
 	$(window).scroll(function() { 
 	    if ($(this).scrollTop() > 0) { 
 		$('aside').css('left','25px');
-		$(".social-icon").css('opacity', '.4');
+		$(".social-icon").css('opacity', '1');
             } 
             else {     
 		$('aside').css('left','-200px');
-		$(".social-icon").css('opacity','1');
+		$(".social-icon").css('opacity','0');
             } 
 	});
     });
-
 
 
     $(window).scroll(function() {
