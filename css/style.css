@@ -28,10 +28,10 @@ body, html {
     transition: all .8s ease;
 }
 .transition-fast {
-    -webkit-transition: all .1s ease;
-    -moz-transition: all .1s ease;
-    -ms-transition: all .1s ease;
-    -o-transition: all .1s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
     transition: all .4s ease;
 }
 
@@ -101,10 +101,10 @@ aside a img, #social a {
     justify-content: center;
 }
 .home-initial {
-    background: #111;
+    background: #ffffff;
 }
 .home-after {
-    background: #333;
+    background: #333333;
 }
 .explode {
     background: transparent;
@@ -125,7 +125,7 @@ aside a img, #social a {
     padding: 0;
 }
 #home h2 {
-    color: #ffffff;
+    color: #333333;
     font-size: 20em;
     font-weight: 100;
     font-family: 'Gruppo', cursive;
@@ -139,7 +139,7 @@ aside a img, #social a {
     font-weight: 100;
     position: relative;
     top: 280px;
-    color: #fff;
+    color: #aaaaaa;
     left: -120px;
 }
 

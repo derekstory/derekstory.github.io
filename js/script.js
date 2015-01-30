@@ -1,11 +1,16 @@
 $(document).on('ready',function () {
    
-    $("#home").delay(500).queue(function () {
-	$(this).removeClass("home-initial").addClass("home-explode").dequeue();
+    $("#home").delay(1800).queue(function () {
+	$(this).removeClass("home-initial").addClass("home-after").dequeue();
     });
-    $("#home").delay(1000).queue(function () {
-	$(this).addClass("home-after").removeClass("explode").dequeue();
+    $("#home h2").delay(1800).queue(function () {
+	$(this).css('color', 'white');
     });
+    $("#home h3").delay(1800).queue(function () {
+	$(this).css('color', '#888888');
+    });
+
+
 
     //Smooth scroll to anchor
     $(function() {
