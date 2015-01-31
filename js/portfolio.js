@@ -1,5 +1,5 @@
 $(document).on('ready',function () {
-   
+    $("#initial-wrap").show();
     $("#home").delay(1100).queue(function () {
 	$(this).removeClass("home-initial").addClass("home-after").dequeue();
     });
@@ -29,8 +29,6 @@ $(document).on('ready',function () {
     });
 
 
-  
-
     //Subtle background image position change on scroll for large screens
     $(window).on("load resize scroll",function(e) {
 	if ( $(window).width() > 940) {      
@@ -40,7 +38,7 @@ $(document).on('ready',function () {
 	    $(".title").filter(function() {
 		return $(this).offset().top < (y + $(window).height()) &&
 		    $(this).offset().top + $(this).height() > y;
-	    }).css('background-position', '0px ' + parseInt(-y / 5) + 'px');
+	    }).css('background-position', '0px ' + parseInt(-y / 2.7) + 'px');
 	}
 	else {
 
@@ -53,11 +51,9 @@ $(document).on('ready',function () {
 	$(window).scroll(function() { 
 	    if ($(this).scrollTop() > 0) { 
 		$('aside').css('left','25px');
-		$(".social-icon").css('opacity', '.4');
             } 
             else {     
 		$('aside').css('left','-200px');
-		$(".social-icon").css('opacity','0');
             } 
 	});
     });
@@ -81,20 +77,18 @@ $(document).on('ready',function () {
     $(window).scroll(function() {
 	var windscroll = $(this).scrollTop();
 
-
+	
 	//Fade in full opacity when you reach the section images
 	var masthead = $('.title');
 	masthead.filter(function () {
 	    return windscroll >= $(this).offset().top-2;
 	}).css({
 	    'opacity': '1',
-	    'background-attachment': 'fixed',
 	});
 	masthead.filter(function () {
 	    return windscroll < $(this).offset().top-2;
 	}).css({
-	    'opacity': '.5',
-	    'background-attachment': 'scroll',
+	    'opacity': '.8',
 	});
 
 	//slide in the Experience boxes when you reach them in the window
@@ -113,12 +107,7 @@ $(document).on('ready',function () {
 
     });
 
-
-    //Smooth mousewheel scrolling
-    $("html").niceScroll({
-	mousescrollstep: "10",
-	scrollspeed: "100",
-    });
+    
 
 
 });
