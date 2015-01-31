@@ -35,7 +35,38 @@ body, html {
     -o-transition: all .4s ease;
     transition: all .4s ease;
 }
+.description {
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
+    background: white;
+}
+.description h2 {
+    font-size: 30px;
+    color: #666666;
+}
+.description p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.7;
+    text-align: justify;
+}
+.description p a {
+    outline: none;
+    text-decoration: none;
+    color: #888;
+}
+.description p a img {
+    margin-top: 10px;
+    height: 40px;
+}
 
+.description p a img#linkedin {
+    height: 48px;
+}
+.description p a img#github {
+    height: 45px;
+}
 /* Social Buttons */
 aside {
     position: fixed;
@@ -647,18 +678,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     margin: 0;
     padding: 0;
 }
-.description {
-    max-width: 900px;
-    padding: 20px;
-    margin: auto;
-    background: white;
-}
-.description p {
-    color: #333;
-    font-size: 1em;
-    line-height: 1.7;
-    text-align: justify;
-}
+
 
 .expBoxWrap {
     padding-top: 3em;
@@ -759,4 +779,23 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 #about {
     min-height: 100%;
     margin: 0;
+}
+
+/*Credits*/
+#credits {
+    width: 100%;
+}
+#credits p {
+    color: #888888;
+    font-size: 12px;
+    text-align: center;
+}
+#credits p a {
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+#credits p a:hover { 
+    text-decoration: underline;
 }
