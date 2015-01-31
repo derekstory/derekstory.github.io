@@ -165,6 +165,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     height: 450px;
     position: relative;
     width: 200px;
+    letter-spacing: -6px;
 }
 #initial-d {
     left: -140px;
