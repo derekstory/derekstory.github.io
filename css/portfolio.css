@@ -168,6 +168,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 @media only screen and (max-width: 35em) {
     #initial-wrap {
+	margin: auto;
 	letter-spacing: -4px;
     }
 }
