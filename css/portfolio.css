@@ -163,7 +163,6 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     background: transparent;
 }
 #initial-wrap {
-    display: none;
     height: 450px;
     position: relative;
     width: 200px;
@@ -219,9 +218,9 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 	right: -20px;
     }
 }
-/*Logo Animation*/
+/*Logo Animation - Bounce Effect*/
 
-.animated {
+.animatedBounce {
   -webkit-animation-duration: 2.2s;
           animation-duration: 2.2s;
   -webkit-animation-fill-mode: both;
@@ -237,27 +236,32 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     opacity: 0;
     -webkit-transform: translate3d(3000px, 0, 0);
             transform: translate3d(3000px, 0, 0);
+	    color: #333;
   }
 
   60% {
     opacity: 1;
     -webkit-transform: translate3d(-25px, 0, 0);
             transform: translate3d(-25px, 0, 0);
+	    color: #333;
   }
 
   75% {
     -webkit-transform: translate3d(10px, 0, 0);
             transform: translate3d(10px, 0, 0);
+	    color: #fff;
   }
 
   90% {
     -webkit-transform: translate3d(-5px, 0, 0);
             transform: translate3d(-5px, 0, 0);
+	    color: #fff;
   }
 
   100% {
     -webkit-transform: none;
             transform: none;
+	    color: #fff;
   }
 }
 
@@ -271,27 +275,32 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     opacity: 0;
     -webkit-transform: translate3d(3000px, 0, 0);
             transform: translate3d(3000px, 0, 0);
+	    color: #333;
   }
 
   60% {
     opacity: 1;
     -webkit-transform: translate3d(-25px, 0, 0);
             transform: translate3d(-25px, 0, 0);
+	    color: #333;
   }
 
   75% {
     -webkit-transform: translate3d(10px, 0, 0);
             transform: translate3d(10px, 0, 0);
+	    color: #fff;
   }
 
   90% {
     -webkit-transform: translate3d(-5px, 0, 0);
             transform: translate3d(-5px, 0, 0);
+	    color: #fff;
   }
 
   100% {
     -webkit-transform: none;
             transform: none;
+	    color: #fff;
   }
 }
 
@@ -309,27 +318,32 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     opacity: 0;
     -webkit-transform: translate3d(-3000px, 0, 0);
             transform: translate3d(-3000px, 0, 0);
+	    color: #fff;
   }
 
   60% {
     opacity: 1;
     -webkit-transform: translate3d(25px, 0, 0);
             transform: translate3d(25px, 0, 0);
+	    color: #fff;
   }
 
   75% {
     -webkit-transform: translate3d(-10px, 0, 0);
             transform: translate3d(-10px, 0, 0);
+	    color: #333;
   }
 
   90% {
     -webkit-transform: translate3d(5px, 0, 0);
             transform: translate3d(5px, 0, 0);
+	    color: #333;
   }
 
   100% {
     -webkit-transform: none;
             transform: none;
+	    color: #333;
   }
 }
 
@@ -343,27 +357,32 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     opacity: 0;
     -webkit-transform: translate3d(-3000px, 0, 0);
             transform: translate3d(-3000px, 0, 0);
+	    color: #333;
   }
 
   60% {
     opacity: 1;
     -webkit-transform: translate3d(25px, 0, 0);
             transform: translate3d(25px, 0, 0);
+	    color: #333;
   }
 
   75% {
     -webkit-transform: translate3d(-10px, 0, 0);
             transform: translate3d(-10px, 0, 0);
+	    color: #fff;
   }
 
   90% {
     -webkit-transform: translate3d(5px, 0, 0);
             transform: translate3d(5px, 0, 0);
+	    color: #fff;
   }
 
   100% {
     -webkit-transform: none;
             transform: none;
+	    color: #fff;
   }
 }
 
@@ -381,27 +400,32 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     opacity: 0;
     -webkit-transform: translate3d(0, 3000px, 0);
             transform: translate3d(0, 3000px, 0);
+	    color: #555555;
   }
 
   60% {
     opacity: 1;
     -webkit-transform: translate3d(0, -20px, 0);
             transform: translate3d(0, -20px, 0);
+	    color: #555555;
   }
 
   75% {
     -webkit-transform: translate3d(0, 10px, 0);
             transform: translate3d(0, 10px, 0);
+	    color: #888888;
   }
 
   90% {
     -webkit-transform: translate3d(0, -5px, 0);
             transform: translate3d(0, -5px, 0);
+	    color: #888888;
   }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+	    color: #888888;
   }
 }
 
@@ -415,27 +439,32 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     opacity: 0;
     -webkit-transform: translate3d(0, 3000px, 0);
             transform: translate3d(0, 3000px, 0);
+	    color: #555555;
   }
 
   60% {
     opacity: 1;
     -webkit-transform: translate3d(0, -20px, 0);
             transform: translate3d(0, -20px, 0);
+	    color: #555555;
   }
 
   75% {
     -webkit-transform: translate3d(0, 10px, 0);
             transform: translate3d(0, 10px, 0);
+	    color: #888888;
   }
 
   90% {
     -webkit-transform: translate3d(0, -5px, 0);
             transform: translate3d(0, -5px, 0);
+	    color: #888888;
   }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+	    color: #888888;
   }
 }
 
@@ -443,6 +472,58 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
   -webkit-animation-name: bounceInUp;
           animation-name: bounceInUp;
 }
+/* Background color and font color animation */
+.animatedBackground {
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes backgroundChange {
+  0%, 60%, 90% 100% {
+    -webkit-transition-timing-function: cubic-bezier(0, 0.600, .900,  1.000);
+            transition-timing-function: cubic-bezier(0, 0.600, .900,  1.000);
+  }
+
+  0% {
+      background: white;
+  }
+  60% {
+      background: white;
+  }
+  90% {
+     background: #333;
+  }
+  100% {
+      background: #333
+  }
+}
+
+@keyframes backgroundChange {
+  0%, 60%, 90% 100% {
+    -webkit-transition-timing-function: cubic-bezier(0, 0.600, .900,  1.000);
+            transition-timing-function: cubic-bezier(0, 0.600, .900,  1.000);
+  }
+
+  0% {
+      background: white;
+  }
+  60% {
+      background: white;
+  }
+  90% {
+     background: #333;
+  }
+  100% {
+      background: #333
+  }
+}
+.backgroundChange {
+  -webkit-animation-name: backgroundChange;
+          animation-name: backgroundChange;
+}
+
+
 
 
 /*Bouncing Arrow*/

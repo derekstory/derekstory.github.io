@@ -1,16 +1,4 @@
 $(document).on('ready',function () {
-    $("#initial-wrap").show();
-    $("#home").delay(1100).queue(function () {
-	$(this).removeClass("home-initial").addClass("home-after").dequeue();
-    });
-    $("#home h2").delay(1100).queue(function () {
-	$(this).css('color', 'white');
-    });
-    $("#home h3").delay(1100).queue(function () {
-	$(this).css('color', '#888888');
-    });
-
-
 
     //Smooth scroll to anchor
     $(function() {
