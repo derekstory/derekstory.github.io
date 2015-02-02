@@ -4,6 +4,9 @@ body, html {
     width: 100%;
     background: white;
 }
+body {
+    overflow-x: hidden;
+}
 
 /*Foundation custom column size*/
 .large-fiveacross {

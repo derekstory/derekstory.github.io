@@ -98,7 +98,6 @@ $(window).on('load',function () {
 	}).css({
 	    'opacity': '1',
 	});
-
 	expShow.filter(function () {
 	    return windscroll < $(this).offset().top-550;
 	}).css({
@@ -106,11 +105,6 @@ $(window).on('load',function () {
 	});
 
     });
-
-    
-
-  
-
 
 });
 
