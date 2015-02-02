@@ -640,8 +640,8 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 #about .title {
     /*background: url('http://www.acg.org/UserFiles/image/detroit/Skyline%20Detroit2.jpg');*/
-    background: url('../img/surf.jpg') no-repeat;
-    background-size: 100% auto;
+    background: url('../img/city.jpg') no-repeat;
+    background-size: 130% auto;
 }
 
 /*----Skills Section---*/
