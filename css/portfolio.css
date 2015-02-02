@@ -158,15 +158,6 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     align-items: center;
     justify-content: center;
 }
-.home-initial {
-    background: #ffffff;
-}
-.home-after {
-    background: #222;
-}
-.explode {
-    background: transparent;
-}
 #initial-wrap {
     height: 450px;
     position: relative;
@@ -184,7 +175,6 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     padding: 0;
 }
 #home h2 {
-    color: #333333;
     font-size: 20em;
     font-weight: 100;
     font-family: 'Gruppo', cursive;
@@ -199,7 +189,6 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     font-weight: 100;
     position: relative;
     top: 280px;
-    color: #aaaaaa;
     left: -120px;
 }
 @media only screen and (max-width: 46em) {
@@ -405,14 +394,14 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     opacity: 0;
     -webkit-transform: translate3d(0, 3000px, 0);
             transform: translate3d(0, 3000px, 0);
-	    color: #333;
+	    color: #aaa;
   }
 
   60% {
     opacity: 1;
     -webkit-transform: translate3d(0, -20px, 0);
             transform: translate3d(0, -20px, 0);
-	    color: #333;
+	    color: #aaa;
   }
 
   75% {
@@ -444,14 +433,14 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     opacity: 0;
     -webkit-transform: translate3d(0, 3000px, 0);
             transform: translate3d(0, 3000px, 0);
-	    color: #555555;
+	    color: #aaa;
   }
 
   60% {
     opacity: 1;
     -webkit-transform: translate3d(0, -20px, 0);
             transform: translate3d(0, -20px, 0);
-	    color: #555555;
+	    color: #aaa;
   }
 
   75% {
@@ -497,10 +486,10 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
       background: white;
   }
   90% {
-     background: #333;
+     background: #222;
   }
   100% {
-      background: #333
+      background: #222;
   }
 }
 
@@ -517,10 +506,10 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
       background: white;
   }
   90% {
-     background: #333;
+     background: #222;
   }
   100% {
-      background: #333
+      background: #222;
   }
 }
 .backgroundChange {
