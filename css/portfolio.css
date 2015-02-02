@@ -166,12 +166,6 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     width: 200px;
     letter-spacing: -6px;
 }
-@media only screen and (max-width: 35em) {
-    #initial-wrap {
-	margin: auto;
-	letter-spacing: -4px;
-    }
-}
 #initial-d {
     left: -140px;
 }
@@ -193,7 +187,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 #home h3 {
     font-family: 'Gruppo', cursive;
-    font-size: 4.3em;
+    font-size: 4.2em;
     line-height: 1;
     font-weight: 100;
     position: relative;
@@ -201,15 +195,17 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     color: #aaaaaa;
     left: -120px;
 }
-@media only screen and (max-width: 28em) {
+@media only screen and (max-width: 35em) {
     #initial-wrap {
 	height: 200px;
+	margin: auto;
+	letter-spacing: -4px;
     }
     #home h2 {
 	font-size: 10em;
     }
     #home h3 {
-	font-size: 2.15em;
+	font-size: 2.2em;
 	top: 140px;
 	left: -10px;
     }
@@ -500,6 +496,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 /* options section */
 
 #options {
+    background: url('../img/project_papper.png') repeat #eee;
     width: 100%;
     padding-top: 4em;
     padding-bottom: 4em;
@@ -521,6 +518,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     height: 200px;
     display: block;
     margin: auto;
+    background: #fff;
     background-size: 80% 80%;
     background-position: 0 300px;
     background-repeat: no-repeat;
@@ -567,7 +565,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 .choices > a > .columns:hover {
     border: 1px solid #ccc;
-    background: #F0F2F1;
+    background: #FFFFFF;
 }
 
 /*Title*/
