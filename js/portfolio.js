@@ -59,6 +59,17 @@ $(document).on('ready',function () {
 
     }).scroll();
 
+    //Show experience boxes one by one on scroll
+    $(window).scroll(function() {
+	var windscroll = $(window).scrollTop();
+        if ($('.expBoxWrap').position().top <= windscroll - -400)   {
+	    $('.expBox').each(function(i) {
+		$(this).delay(100*i).queue(function(){
+		    $(this).addClass("opacity-one").dequeue();
+		});
+	    });
+	}
+    }).scroll();
 
     $(window).scroll(function() {
 	var windscroll = $(this).scrollTop();
@@ -76,19 +87,8 @@ $(document).on('ready',function () {
 	    'opacity': '.8',
 	});
 
-	//slide in the Experience boxes when you reach them in the window
-	var expShow = $('.expBoxWrap');
-	expShow.filter(function () {
-	    return windscroll >= $(this).offset().top-550;
-	}).css({
-	    'opacity': '1',
-	});
 
-	expShow.filter(function () {
-	    return windscroll < $(this).offset().top-550;
-	}).css({
-	    'opacity': '0',
-	});
+
 
 
 	var descript  = $('.description');
@@ -103,7 +103,6 @@ $(document).on('ready',function () {
 	}).css({
 	    'opacity': '0',
 	});
-
 
     });
 

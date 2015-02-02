@@ -24,6 +24,12 @@ body {
 } 
 
 /* General */
+.opacity-one {
+    opacity: 1 !important;
+}
+.opacity-zero {
+    opacity: 0 !important;
+}
 .transition-slow {
     -webkit-transition: all .8s ease;
     -moz-transition: all .8s ease;
@@ -767,7 +773,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     padding-top: 3em;
     padding-bottom: 3em;
     background: url('../img/project_papper.png') repeat #ddd;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: all .8s ease;
     -moz-transition: all .8s ease;
     -ms-transition: all .8s ease;
@@ -787,13 +793,18 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     height: 250px;
     width: 100%;
     margin: auto;
-    display: block;
+    opacity: 0;
     border-radius: 10px;
     border: 1px solid #cccccc;
     background-position: center center;
     -moz-box-shadow:    inset 0 0 20px #000000;
     -webkit-box-shadow: inset 0 0 20px #000000;
     box-shadow:         inset 0 0 20px #000000;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
 }
 
 .expBox h2 {
