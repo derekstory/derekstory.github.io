@@ -74,7 +74,7 @@ aside {
     left: -100px;
     z-index: 10;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 46em) {
     aside {
 	display: none;
     }
