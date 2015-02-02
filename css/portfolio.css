@@ -43,6 +43,11 @@ body {
     padding: 20px;
     margin: auto;
     background: white;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
 }
 .description h2 {
     font-size: 30px;
@@ -707,6 +712,8 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     font-weight: 100;
     position: absolute;
     bottom: 0;
+    font-family: 'Gruppo', cursive;
+    text-transform: uppercase;
 }
 @media only screen and (max-width: 40em) {
     .title h2 {
@@ -745,10 +752,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     font-size: 1.4em;
     text-align: center;
 }
-#skills br {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+
 @media only screen and (max-width: 30em) {
     #skills p {
 	font-size: 1em;

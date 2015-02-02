@@ -60,11 +60,8 @@ $(document).on('ready',function () {
     }).scroll();
 
 
-
-
     $(window).scroll(function() {
 	var windscroll = $(this).scrollTop();
-
 	
 	//Fade in full opacity when you reach the section images
 	var masthead = $('.title');
@@ -92,6 +89,21 @@ $(document).on('ready',function () {
 	}).css({
 	    'opacity': '0',
 	});
+
+
+	var descript  = $('.description');
+	descript.filter(function () {
+	    return windscroll >= $(this).offset().top-550;
+	}).css({
+	    'opacity': '1',
+	});
+
+	descript.filter(function () {
+	    return windscroll < $(this).offset().top-550;
+	}).css({
+	    'opacity': '0',
+	});
+
 
     });
 
