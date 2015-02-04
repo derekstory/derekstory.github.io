@@ -44,6 +44,9 @@ body {
     -o-transition: all .4s ease;
     transition: all .4s ease;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gruppo', cursive;
+}
 .description {
     max-width: 900px;
     padding: 20px;
@@ -56,19 +59,40 @@ body {
     transition: all .8s ease;
 }
 .description h2 {
-    font-size: 30px;
-    color: #666666;
+    font-size: 3.2em;
+    color: #111;
+    margin-top: 1em;
+}
+@media only screen and (max-width: 40em) {
+    .description h2 {
+	font-size: 2.5em;
+    }
+}
+.description p, .description li {
+    color: #444;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.7;
 }
 .description p {
-    color: #333;
-    font-size: 1em;
-    line-height: 1.7;
     text-align: justify;
 }
-.description p a {
+.description li {
+    margin-left: 2em;
+    margin-bottom: .5em;
+}
+@media only screen and (max-width: 35em) {
+    .description p, .description li {
+	font-size: 1em;
+    }
+}
+.description a {
     outline: none;
     text-decoration: none;
-    color: #888;
+    color: #00365b;
+}
+.description a:hover {
+    text-decoration: underline;
 }
 .description p a img {
     margin-top: 10px;
@@ -81,6 +105,10 @@ body {
 .description p a img#github {
     height: 45px;
 }
+.description ul {
+    list-style-type: square;
+}
+
 /* Social Buttons */
 aside {
     position: fixed;
