@@ -1,4 +1,4 @@
-$(window).on('load',function () {
+$(window).on('load',function () { 
 
     //Smooth scroll to anchor
     $(function() {
