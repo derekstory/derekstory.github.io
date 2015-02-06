@@ -1,4 +1,4 @@
-$(document).on('ready',function () {
+$(window).on('load',function () {
 
     //Smooth scroll to anchor
     $(function() {
@@ -16,7 +16,6 @@ $(document).on('ready',function () {
 	});
     });
 
-
     //Subtle background image position change on scroll for large screens
     $(window).on("load resize scroll",function(e) {
 	if ( $(window).width() > 940) {      
@@ -33,7 +32,6 @@ $(document).on('ready',function () {
 	}
     });    
 
-
     //Slidein social icons and logo
     $(function(){
 	$(window).scroll(function() { 
@@ -46,7 +44,6 @@ $(document).on('ready',function () {
 	});
     });
 
-
     $(window).scroll(function() {
 	var windscroll = $(window).scrollTop();
         if ($('#options').position().top <= windscroll - -400)   {
@@ -56,7 +53,6 @@ $(document).on('ready',function () {
 	    $(".choices").removeClass("choices-slide");
 	    $(".icon-option").removeClass("icon-slideIn");
 	}
-
     }).scroll();
 
     //Show experience boxes one by one on scroll
@@ -87,10 +83,7 @@ $(document).on('ready',function () {
 	    'opacity': '.8',
 	});
 
-
-
-
-
+	//paragraph descriptions fade in
 	var descript  = $('.description');
 	descript.filter(function () {
 	    return windscroll >= $(this).offset().top-550;
@@ -105,9 +98,6 @@ $(document).on('ready',function () {
 	});
 
     });
-
-    
-
 
 });
 
