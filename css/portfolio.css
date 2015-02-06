@@ -25,6 +25,9 @@ body {
 } 
 
 /* General */
+.marginAuto {
+    margin: auto;
+}
 .opacity-one {
     opacity: 1 !important;
 }
@@ -188,7 +191,6 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     display: -webkit-flexbox;
     display: -webkit-flex;
     -webkit-flex-align: center;
-    -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
     justify-content: center;
