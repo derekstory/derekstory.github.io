@@ -6,6 +6,7 @@ body, html {
 }
 body {
     overflow-x: hidden;
+    display: none;
 }
 
 /*Foundation custom column size*/
@@ -192,11 +193,12 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     align-items: center;
     justify-content: center;
 }
-#initial-wrap {
+#initial-wrap {    
     height: 450px;
     position: relative;
     width: 200px;
     letter-spacing: -6px;
+    margin: auto;
 }
 #initial-d {
     left: -140px;
