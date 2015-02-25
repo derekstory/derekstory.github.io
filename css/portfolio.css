@@ -184,69 +184,47 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     margin: 0;
     height: 100%;
     overflow: hidden;
-    display: -webkit-box;      
-    display: -moz-box;         
-    display: -webkit-flex;     
-    display: -webkit-flexbox;
-    display: -webkit-flex;
-    -webkit-flex-align: center;
-    -webkit-align-items: center;
-    display: flex;
-
-}
-#initial-wrap {    
-    height: 450px;
+ }
+#large-header {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     position: relative;
-    width: 200px;
-    letter-spacing: -6px;
-    margin: auto;
+    -moz-box-shadow:    inset 0 0 100px #000000;
+    -webkit-box-shadow: inset 0 0 100px #000000;
+    box-shadow:         inset 0 0 100px #000000;
 }
-#initial-d {
-    left: -140px;
+.bgForrest {
+    background: url('../img/bgForrest.jpg');
 }
-#initial-s {
-    right: -140px;
+.bgCups {
+    background: url('../img/bgCups.jpg');
 }
-#home h2, #home h3 {
-    margin: 0;
-    padding: 0;
+.bgAlley {
+    background: url('../img/bgAlley.jpg');
 }
+.bgWater {
+    background: url('../img/bgWater.jpg');
+}
+
+
 #home h2 {
     font-size: 20em;
     font-weight: 100;
-    font-family: 'Gruppo', cursive;
+    font-family: "Clicker Script", cursive !important;
     line-height: 1;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translate3d(-50%, -50%, 0px);
+}
 
-}
-#home h3 {
-    font-family: 'Gruppo', cursive;
-    font-size: 4.2em;
-    line-height: 1;
-    font-weight: 100;
-    position: relative;
-    top: 280px;
-    left: -120px;
-}
 @media only screen and (max-width: 46em) {
-    #initial-wrap {
-	height: 200px;
-	margin: auto;
-	letter-spacing: -4px;
-    }
     #home h2 {
-	font-size: 10em;
-    }
-    #home h3 {
-	font-size: 2.2em;
-	top: 140px;
-	left: -10px;
-    }
-    #initial-d {
-	left: -20px;
-    }
-    #initial-s {
-	right: -20px;
+	font-size: 8em;
     }
 }
 /*Logo Animation - Bounce Effect*/

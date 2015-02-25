@@ -1,6 +1,13 @@
 $(window).on('load',function () { 
     $('body').show();
 
+    //Random background for home section
+    var classCycle = ['bgForrest', 'bgCups', 'bgAlley', 'bgWater'];
+    var randomNumber = Math.floor(Math.random() * classCycle.length);
+    var classToAdd = classCycle[randomNumber];
+
+    $('#large-header').addClass(classToAdd);
+
     //Smooth scroll to anchor
     $(function() {
 	$('a[href*=#]:not([href=#])').click(function() {
