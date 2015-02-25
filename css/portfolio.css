@@ -219,6 +219,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     left: 50%;
     top: 50%;
     color: white;
+    -webkit-transform: translate3d(-50%,-50%,0);
     transform: translate3d(-50%, -50%, 0px);
 }
 
