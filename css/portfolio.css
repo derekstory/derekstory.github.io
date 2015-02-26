@@ -62,12 +62,29 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: all .8s ease;
     transition: all .8s ease;
 }
+.description h1 {
+    font-size: 3.2em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.description h1 + p {
+    text-align: center;
+    font-size:  1em;
+    margin-top: 0;
+}
 .description h2 {
     font-size: 3.2em;
     color: #111;
     margin-top: 1em;
 }
 @media only screen and (max-width: 40em) {
+    .description h1 {    
+	font-size: 1.5em;
+    }
+    .description h1 + p {
+	text-align: justify;
+    }
     .description h2 {
 	font-size: 2.5em;
     }
@@ -210,7 +227,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 
 
-#home h2 {
+#home h1 {
     font-size: 20em;
     font-weight: 100;
     font-family: "Clicker Script", cursive !important;
@@ -224,7 +241,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 
 @media only screen and (max-width: 46em) {
-    #home h2 {
+    #home h1 {
 	font-size: 8em;
     }
 }
@@ -887,16 +904,22 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 /*Credits*/
 #credits {
     width: 100%;
+    text-align: center;
+}
+#credits h6 {
+    color: #888888;
+    margin: 0,
+    padding: 0;
 }
 #credits p {
+    padding: 0;
+    margin-top: 0;
     color: #888888;
     font-size: 12px;
-    text-align: center;
 }
 #credits p a {
     color: #666666;
     font-size: 12px;
-    text-align: center;
     text-decoration: none;
 }
 #credits p a:hover { 
