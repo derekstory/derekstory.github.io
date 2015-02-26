@@ -2,7 +2,7 @@ $(window).on('load',function () {
     $('body').fadeIn(1100);
 
     //Random background for home section
-    var classCycle = ['bgForrest', 'bgCups', 'bgAlley', 'bgWater'];
+    var classCycle = ['bgForrest', 'bgCups', 'bgAlley', 'bgWater', 'champagne'];
     var randomNumber = Math.floor(Math.random() * classCycle.length);
     var classToAdd = classCycle[randomNumber];
     $('#large-header').addClass(classToAdd);
