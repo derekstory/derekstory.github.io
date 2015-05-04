@@ -54,8 +54,8 @@ $(window).on('load',function () {
     $(window).scroll(function() {
 	var windscroll = $(window).scrollTop();
         if ($('#options').position().top <= windscroll - -400)   {
-		$(".choices").addClass("choices-slide");
-		$(".icon-option").addClass("icon-slideIn");
+	    $(".choices").addClass("choices-slide");
+	    $(".icon-option").addClass("icon-slideIn");
 	} else {
 	    $(".choices").removeClass("choices-slide");
 	    $(".icon-option").removeClass("icon-slideIn");
