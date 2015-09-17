@@ -6,6 +6,7 @@ body, html {
 body {
     overflow-x: hidden;
     display: none;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 }
 
 /*Foundation custom column size*/
@@ -47,11 +48,11 @@ body {
     -o-transition: all .4s ease;
     transition: all .4s ease;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
     font-family: 'Gruppo', cursive;
 }
 .description {
-    max-width: 900px;
+    max-width: 1100px;
     padding: 20px;
     margin: auto;
     background: white;
@@ -66,6 +67,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin: 0;
     padding: 0;
+}
+.description h1 span {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: block;
 }
 .description h1 + p {
     text-align: center;
@@ -229,7 +236,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 
 
-#home h1 {
+#home h2 {
     font-size: 20em;
     font-weight: 100;
     font-family: "Clicker Script", cursive !important;
@@ -243,7 +250,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 
 @media only screen and (max-width: 46em) {
-    #home h1 {
+    #home h2 {
 	font-size: 8em;
     }
 }
@@ -388,23 +395,13 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     -moz-box-shadow:    inset 0 0 300px #000000;
     -webkit-box-shadow: inset 0 0 300px #000000;
     box-shadow:         inset 0 0 300px #000000;
+    background-position: 0 0;
 }
-.cover {
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-    background-size: cover !important;
-    background-attachment: scroll !important;
-}
+
 @media only screen and (max-width: 70em) {
     .title {
-	background-position: 0 0 !important;
 	height: 500px;
-	-webkit-background-size: cover !important;
-	-moz-background-size: cover !important;
-	-o-background-size: cover !important;
-	background-size: cover !important;
-	background-attachment: scroll !important;
+
     }
 }
 @media only screen and (max-width: 50em) {
@@ -440,15 +437,13 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 #skills .title {
     background: url('../img/desk.jpg') no-repeat;
-    background-size: 100% 210%;
+    background-size: 100% 220%;
 }
-#experience .title {
-    /*background: url('http://www.acg.org/UserFiles/image/detroit/Skyline%20Detroit2.jpg');*/
+.experience .title {
     background: url('../img/nature.jpg') no-repeat;
     background-size: 100% auto;
 }
 #about .title {
-    /*background: url('http://www.acg.org/UserFiles/image/detroit/Skyline%20Detroit2.jpg');*/
     background: url('../img/city.jpg') no-repeat;
     background-size: 130% auto;
 }
@@ -482,8 +477,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 
 /*---Experience Section---*/
-#experience {
-    min-height: 100%;
+.experience {
     width: 100%;
     display: block;
     overflow-x: hidden;
@@ -491,7 +485,69 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     padding: 0;
 }
 
+.experience .columns.sg {
+  padding: 0;
+}
+.experience strong {
+  font-weight: 400;
+}
+.experience img {
+  width: 100%;
+  margin-left: 30px;
+  transition: .5s;
+  transform: scale(1);
+  box-shadow: 10px 10px 10px #888;
+}
+.experience img:hover {
+  transform: scale(1.2);
+}
+@media only screen and (max-width: 1025px) {
+  .experience img {
+    margin-left: 0;
+  }
+}
+.experience .row {
+  margin: 0;
+}
+hr {
+  background: #dddddd;
+  border: none;
+  width: 60%;
+  height: 1px
+}
 
+.experience h4, .experience h4 a {
+  font-size: 40px;
+  font-weight: 100;
+  color: #333333;
+  display: inline-block;
+  text-decoration: none;
+}
+.experience h4, .experience h4 a:hover {
+  text-decoration: none;
+}
+.experience h4 a:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: .5s;
+}
+.experience h4 a:hover:after {
+  width: 100%;
+  background: #E05E58;
+}
+@media only screen and (max-width: 650px) {
+  .experience h4, .experience h4 a {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .experience h4, .experience h4 a {
+    font-size: 24px;
+  }
+}
 .expBoxWrap {
     padding-top: 3em;
     padding-bottom: 3em;

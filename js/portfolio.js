@@ -24,20 +24,31 @@ $(window).on('load',function () {
     });
 
     //Subtle background image position change on scroll for large screens
-    $(window).on("load resize scroll",function(e) {
-	if ( $(window).width() > 940) {      
+    $(window).on("resize", function() {
+        var windowWidth = $(window).width();
 
-	    var y = $(window).scrollTop();
+        function parallax() {
+            var parallax = document.querySelectorAll(".title"),
+                speed;
 
-	    $(".title").filter(function() {
-		return $(this).offset().top < (y + $(window).height()) &&
-		    $(this).offset().top + $(this).height() > y;
-	    }).css('background-position', '0px ' + parseInt(-y / 2.7) + 'px');
-	}
-	else {
+            window.onscroll = function(){
+                [].slice.call(parallax).forEach(function(el,i){
 
-	}
-    });    
+                    var windowYOffset = window.pageYOffset,
+                        elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+                    el.style.backgroundPosition = elBackgrounPos;
+
+                });
+            };
+            if (windowWidth > 940) {
+                speed = -.25;
+	    } else {
+                speed = 0;
+            }
+        }
+        parallax();
+    }).resize();
 
     //Slidein social icons and logo
     $(function(){
