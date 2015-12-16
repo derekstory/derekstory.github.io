@@ -494,13 +494,15 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 .experience img {
   width: 100%;
   margin-left: 30px;
-  transition: .5s;
-  transform: scale(1);
+  transition: all .5s;
+  transform: scale(1) rotate(0deg);
   box-shadow: 10px 10px 10px #888;
   margin-top: 20px;
+  z-index: 999999;
 }
 .experience img:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(4deg);
+  box-shadow: 37px 30px 30px #888;
 }
 @media only screen and (max-width: 1025px) {
   .experience img {
