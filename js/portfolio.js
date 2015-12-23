@@ -1,13 +1,24 @@
-$(window).on('load',function () { 
+$(window).on('load',function () {
+    
+    //
+    // Fade In body
+    //
     $('body').fadeIn(1100);
 
-    //Random background for home section
+
+    /*--------------------------------------
+    // Random background for home section //
+    --------------------------------------*/
+    
     var classCycle = ['bgForrest', 'bgCups', 'bgAlley', 'bgWater'];
     var randomNumber = Math.floor(Math.random() * classCycle.length);
     var classToAdd = classCycle[randomNumber];
     $('#large-header').addClass(classToAdd);
-
+    
+    //
     //Smooth scroll to anchor
+    //
+    
     $(function() {
 	$('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -23,7 +34,12 @@ $(window).on('load',function () {
 	});
     });
 
-    //Subtle background image position change on scroll for large screens
+    
+    /*--------------------------------------
+    // Subtle background image position   //
+    // change on scroll for large screens //
+    --------------------------------------*/
+
     $(window).on("resize", function() {
         var windowWidth = $(window).width();
 
@@ -50,7 +66,12 @@ $(window).on('load',function () {
         parallax();
     }).resize();
 
-    //Slidein social icons and logo
+
+    
+    /*----------------------------------
+    // Slide In Social Icons and Logo //
+    ----------------------------------*/
+
     $(function(){
 	$(window).scroll(function() { 
 	    if ($(this).scrollTop() > 0) { 
@@ -73,7 +94,13 @@ $(window).on('load',function () {
 	}
     }).scroll();
 
-    //Show experience boxes one by one on scroll
+
+    
+    /*-------------------------
+    // Show experience boxes //
+    // one by one on scroll  //
+    -------------------------*/
+    
     $(window).scroll(function() {
 	var windscroll = $(window).scrollTop();
         if ($('.expBoxWrap').position().top <= windscroll - -400)   {
@@ -85,10 +112,16 @@ $(window).on('load',function () {
 	}
     }).scroll();
 
+
+    
     $(window).scroll(function() {
 	var windscroll = $(this).scrollTop();
-	
-	//Fade in full opacity when you reach the section images
+        
+	//
+	// Fade in full opacity when
+        // you reach the section images
+        //
+        
 	var masthead = $('.title');
 	masthead.filter(function () {
 	    return windscroll >= $(this).offset().top-2;
@@ -101,7 +134,10 @@ $(window).on('load',function () {
 	    'opacity': '.8',
 	});
 
-	//paragraph descriptions fade in
+        //
+	// Paragraph descriptions fade in
+        //
+        
 	var descript  = $('.description');
 	descript.filter(function () {
 	    return windscroll >= $(this).offset().top-550;
