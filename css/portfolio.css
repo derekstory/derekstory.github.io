@@ -13,16 +13,16 @@ body {
 .large-fiveacross {
     width: 20%;
 }
-@media only screen and (max-width: 60.063em) { 
+@media only screen and (max-width: 60.063em) {
     .large-fiveacross {
 	width: 50%;
     }
-} 
-@media only screen and (max-width: 35.063em) { 
+}
+@media only screen and (max-width: 35.063em) {
     .large-fiveacross {
 	width: 100%;
     }
-} 
+}
 
 /* General */
 .marginAuto {
@@ -85,7 +85,7 @@ h1, h2, h3, h5, h6 {
     margin-top: 1em;
 }
 @media only screen and (max-width: 40em) {
-    .description h1 {    
+    .description h1 {
 	font-size: 1.5em;
     }
     .description h1 + p {
@@ -186,7 +186,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
     color: #333;
 }
 #logo h3 {
-    font-family: 'Gruppo', cursive; 
+    font-family: 'Gruppo', cursive;
     font-size: .650em;
     font-weight: 100;
     padding: 0;
@@ -280,12 +280,12 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
  * Animation for webkit
  */
 .animated-arrow {
-    -webkit-animation-duration: 1s; 
-    animation-duration: 1s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    animation-iteration-count:infinite; 
-    -webkit-animation-iteration-count:infinite; 
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
 }
 @-webkit-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
@@ -327,7 +327,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 .icon-option {
     border: 1px solid #333333;
-    border-radius: 50%; 
+    border-radius: 50%;
     width: 200px;
     height: 200px;
     display: block;
@@ -598,7 +598,7 @@ hr {
     font-weight: 100;
     background: rgba(0,0,0,.8);
     font-size: 1.3em;
-    
+
 }
 .experience .chrome-extension {
   font-size: 16px;
@@ -654,6 +654,15 @@ hr {
     background-size: 50% auto;
     background-position: center center;
 }
+
+p.press a {
+	font-size: 14px;
+}
+
+p.press a i {
+	font-size: 12px;
+}
+
 /*About Section*/
 #about {
     min-height: 100%;
@@ -681,6 +690,6 @@ hr {
     font-size: 12px;
     text-decoration: none;
 }
-#credits p a:hover { 
+#credits p a:hover {
     text-decoration: underline;
 }
