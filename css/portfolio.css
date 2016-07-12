@@ -499,7 +499,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 .experience img {
 	width: 100%;
-	margin-left: 30px;
+	margin: 0 0 80px 30px;
 	transition: all .5s;
 	transform: scale(1) rotate(0deg);
 	box-shadow: 10px 10px 10px #888;
@@ -512,7 +512,7 @@ aside a img, #social a, #arrow-anchor, #arrow-ancor {
 }
 @media only screen and (max-width: 1025px) {
 	.experience img {
-		margin-left: 0;
+		margin: 0;
 	}
 }
 .experience .row {
